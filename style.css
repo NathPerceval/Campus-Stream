@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* universal font that Campus'Stream will use */
+* {
+    font-family: "League Spartan", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding:10px 15px;
+    color: #FFFFFF;
+    background-color: #004aad;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* style codes for the header (blue ribbon) across all pages */
+#header{ 
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #004aad;
+    background-image: url(Images/CS\ Backdrop.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 20px 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.mainNavbarFix {
+    display: flex;
+}
+
+.nav1 {
+    flex: 1;
+}
+
+/* style code for the search bar across all pages */
+.mainNavbarFix #mainSearch {
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 10px; 
+    font-size: 13px;
+    width: 400px; 
+}
+
+.mainNavbarFix #mainSearch:focus {
+    outline: none;
+}
+
+.nav2 {
+    flex: 1;
+}
+
+#mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainNavbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#mainNavbar li a {
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#mainNavbar li a:hover {
+    color: #5398ff;
+}
+
+#mainNavbar li a:hover::after {
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: #5398ff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 1s ease;
+}
+
+#mainSearch {
+    width: 500px;
+    height: 20px;
+    padding: 10px 10px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* style code for the hero section, or more known as the feature page,
+specifically the one with the school supplies background with caption
+of "Value Deals for the month of March" */
+#hero {
+    background-image: url("Images/Hero\ Featured\ 3.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1 {
+    color: #004aad;
+}
+
+.buttonCu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #004aad;
+    border: 0px solid;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+#featured {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#featured .featBox {
+    width: 200px;
+    text-align: center;
+    padding: 25px 18px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+#featured .featBox img {
+    max-width: 100%;
+    height:auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#featured .featBox:hover {
+    transform: scale(1.1);
+}
+
+#featured .featBox h5 {
+    display: inline-block;
+    padding: 10px 15px 7px 15px;
+    line-height: 1;
+    border-radius: 30px;
+    color: #004aad;
+    background-color: #9bdaff;
+}
+
+#featured .featBox:nth-child(2) h5 {
+    background-color: 
+}
+
+#featured .featBox:nth-child(3) h5 {
+    background-color: 
+}
+
+#featured .featBox:nth-child(4) h5 {
+    background-color: 
+}
+
+#featured .featBox:nth-child(5) h5 {
+    background-color: 
+}
+
+#featured .featBox:nth-child(6) h5 {
+    background-color: 
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .productCon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .product {
+    width: 18%;
+    min-width: 250px;
+    padding: 10px 10px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+#product1 .product:hover {
+    transform: scale(1.03)
+}
+
+#product1 .product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .product .desc {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .product .desc span {
+    color: #5398ff;
+    font-size: 15px;
+}
+
+#product1 .product .desc h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
+#product1 .product .desc h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #004aad;
+}
+
+#product1 .product .buttonCuPr {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #004aad;
+    border: 0px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#product1 .product .buttonCuPr:hover {
+    transform: scale(1.1);
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Images/CS\ Call\ to\ Action.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #004aad;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #004aad;
+}
+
+#banner button:hover {
+    background: #5398ff;
+    color: #004aad;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 0px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+}
+
+
+footer .col img {
+    max-width: 100px;
+    height: auto;
+}
+
+footer .iconFol img {
+    max-width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+footer .copyRight {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#shopHero {
+    background-image: url("Images/Hero\ Shop\ 1.png");
+    height: 48vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#shopHero span {
+    color: #004aad;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #004aad;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#proDetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#mainImg {
+    width: 100%;
+}
+
+#proDetails .single-proDet {
+    width: 50%;
+}
+
+#proDetails .single-proDet span {
+    color: #004aad;
+}
+
+#proDetails .single-proDet h4 {
+    font-size: 24px;
+}
+
+#proDetails .single-proDet h2 {
+    font-size: 30px;
+    color: #004aad;
+}
+
+#proDetails .single-proDet h6 {
+    font-size: 20px;
+}
+
+#proDetails .single-proDet select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#proDetails .single-proDet input {
+    width: 50px;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#proDetails .single-proDet input:focus {
+    outline: none;
+}
+
+#proDetails .single-proIm {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#aboutHead img {
+    width: 50%;
+    height: auto;
+}
+
+#aboutHead {
+    display:flex;
+    align-items: center;
+}
+
+#aboutHead p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+#aboutHead div {
+    padding-left: 40px;
+}
+
+#creator {
+    text-align: center;
+}
+
+#creator .creatorCon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#creator .member {
+    width: 18%;
+    min-width: 250px;
+    padding: 10px 10px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+#creator .member p {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+#creator .member:hover {
+    transform: scale(1.03)
+}
+
+#creator .member img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#creator .member .descab {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#creator .member .descab h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
